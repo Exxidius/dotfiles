@@ -1,0 +1,3 @@
+- [ ] [Polybar Configuation]
+- [ ] Sxkhd Configuration
+- [ ] Neovim Configuration

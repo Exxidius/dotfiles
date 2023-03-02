@@ -1,0 +1,13 @@
+;====================================================
+; FILESYSTEM 
+;====================================================
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /home
+
+label-mounted = %{F#F0C674}%{T2}󰆼%{F- T-} %percentage_used%%
+
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.disabled}

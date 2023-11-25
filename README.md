@@ -6,9 +6,5 @@ Currently present are:
   - Polybar config
   - Sxhkd config 
   - Bspwm config
-  - Nvim init configuration
+  - Vim init configuration
   - Kitty terminal emulator config
-
-In planning are currently: 
-  - mabye install script
-  - ncspot color scheme when done

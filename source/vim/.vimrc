@@ -46,13 +46,24 @@ let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 autocmd VimEnter * silent !echo -ne "\e[2 q"
 
-" windows
+" window moving resizing
 set splitbelow
 set splitright
 nnoremap <C-h> <C-W>h
 nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-l> <C-W>l
+tnoremap <C-h> <C-W>h
+tnoremap <C-j> <C-W>j
+tnoremap <C-k> <C-W>k
+tnoremap <C-l> <C-W>l
+nnoremap <C-left>  :vertical resize +5<cr>
+nnoremap <C-down>  :resize +5<cr>
+nnoremap <C-up>    :resize -5<cr>
+nnoremap <C-right> :vertical resize -5<cr>
+
+
+" new windows and only
 nnoremap <leader>v <C-w>v
 nnoremap <leader>s <C-w>s
 nnoremap <leader>f :only<CR>
@@ -62,7 +73,7 @@ nnoremap <leader><space> :buffers<CR>
 nnoremap <leader>d :bd<CR>
 nnoremap <leader>o :e 
 nnoremap <leader>n :enew<CR>
-nnoremap <leader>s :b 
+nnoremap <leader>b :b 
 
 " set line on input cursor
 autocmd InsertEnter,InsertLeave * set cul!

@@ -1,4 +1,4 @@
-# ArchConfig
+# Config Files
 
 A storage repository of my configuration files for my minimal desktop setup.
 

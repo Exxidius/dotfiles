@@ -42,6 +42,9 @@ nnoremap <leader>re :Rex<CR>
 
 " mouse
 set mouse=a
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+autocmd VimEnter * silent !echo -ne "\e[2 q"
 
 " windows
 set splitbelow
@@ -66,7 +69,7 @@ autocmd InsertEnter,InsertLeave * set cul!
 
 " ruler and line end marker
 set colorcolumn=80
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+highlight ColorColumn ctermbg=0 guibg=Grey
 set ruler
 
 set ttyfast

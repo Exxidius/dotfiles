@@ -10,8 +10,8 @@ set nocompatible
 let mapleader=" "
 
 " tab
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 
 " numbering
@@ -76,12 +76,13 @@ nnoremap <leader>n :enew<CR>
 nnoremap <leader>b :b 
 
 " set line on input cursor
-autocmd InsertEnter,InsertLeave * set cul!
+" autocmd InsertEnter,InsertLeave * set cul!
 
-" ruler and line end marker
+" ruler and line end marker, no wrap
 set colorcolumn=80
-highlight ColorColumn ctermbg=0 guibg=Grey
+highlight ColorColumn ctermbg=0 guibg=LightGrey
 set ruler
+set nowrap
 
 set ttyfast
 
